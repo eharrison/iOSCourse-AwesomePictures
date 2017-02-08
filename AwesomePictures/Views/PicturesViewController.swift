@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AwesomeData
 
 class PicturesViewController: UITableViewController {
 
@@ -28,7 +29,9 @@ class PicturesViewController: UITableViewController {
             return cell
         }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "picture", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "picture", for: indexPath) as! PictureTableViewCell
+        
+        _ = cell.pictureImageView.setImage("https://www.askideas.com/media/07/Keep-Calm-Cause-Im-Awesome.png", completion: nil)
         
         return cell
     }

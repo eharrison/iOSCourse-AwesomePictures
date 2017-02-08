@@ -1,0 +1,6 @@
+framework module Pods_AwesomePictures {
+  umbrella header "Pods-AwesomePictures-umbrella.h"
+
+  export *
+  module * { export * }
+}
