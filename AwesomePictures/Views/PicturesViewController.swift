@@ -13,6 +13,10 @@ class PicturesViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ImageObject.fetchImages { (images) in
+            print("Count: \(images.count)")
+        }
     }
 
     // MARK: - UITableView Delegate

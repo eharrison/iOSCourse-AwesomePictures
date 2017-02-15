@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A6CC8671E5461D2000FAEE4 /* ImageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CC8661E5461D2000FAEE4 /* ImageObject.swift */; };
 		0A98D9151E4B2C8F00682BED /* PictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98D9141E4B2C8F00682BED /* PictureTableViewCell.swift */; };
 		0ABEBA3F1E38B1E800AFECFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABEBA3E1E38B1E800AFECFC /* AppDelegate.swift */; };
 		0ABEBA441E38B1E800AFECFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABEBA421E38B1E800AFECFC /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A6CC8661E5461D2000FAEE4 /* ImageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageObject.swift; path = Model/ImageObject.swift; sourceTree = "<group>"; };
 		0A98D9141E4B2C8F00682BED /* PictureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PictureTableViewCell.swift; path = Views/PictureTableViewCell.swift; sourceTree = "<group>"; };
 		0ABEBA3B1E38B1E800AFECFC /* AwesomePictures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomePictures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABEBA3E1E38B1E800AFECFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A6CC8681E5461E0000FAEE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A6CC8661E5461D2000FAEE4 /* ImageObject.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		0A75992B3E906D9F1A7638FD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				0ABEBA3E1E38B1E800AFECFC /* AppDelegate.swift */,
+				0A6CC8681E5461E0000FAEE4 /* Model */,
 				0ABEBA551E38B63200AFECFC /* Views */,
 				0ABEBA561E38B64400AFECFC /* Storyboards */,
 				0ABEBA481E38B1E800AFECFC /* Assets.xcassets */,
@@ -236,6 +247,7 @@
 				0A98D9151E4B2C8F00682BED /* PictureTableViewCell.swift in Sources */,
 				0ABEBA3F1E38B1E800AFECFC /* AppDelegate.swift in Sources */,
 				0ABEBA471E38B1E800AFECFC /* AwesomePictures.xcdatamodeld in Sources */,
+				0A6CC8671E5461D2000FAEE4 /* ImageObject.swift in Sources */,
 				0ABEBA541E38B5E500AFECFC /* PicturesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
