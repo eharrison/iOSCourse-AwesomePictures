@@ -17,6 +17,10 @@ class ImageObject: NSObject {
     
     // MARK: - Class functions
     
+    func name(){
+        
+    }
+    
     static func fetchImages(completed: ((_ images: [ImageObject])->Void)?){
         _ = AwesomeRequester.performRequest("https://www.instagram.com/itsdayoff_travelblog/media/") { (data) in
             if let jsonObject = AwesomeParser.jsonObject(data) {
@@ -26,9 +30,19 @@ class ImageObject: NSObject {
                     for item in items {
                         if let image = item["images"] as? [String: Any] {
                             let imageObject = ImageObject()
-                            imageObject.thumbnail = AwesomeParser.stringValue(image, key: "thumbnail")
-                            imageObject.lowResolution = AwesomeParser.stringValue(image, key: "low_resolution")
-                            imageObject.standardResolution = AwesomeParser.stringValue(image, key: "standard_resolution")
+                            
+                            if let image = image["thumbnail"] as? [String: Any] {
+                                imageObject.thumbnail = AwesomeParser.stringValue(image, key: "url")
+                            }
+                            
+                            if let image = image["low_resolution"] as? [String: Any] {
+                                imageObject.lowResolution = AwesomeParser.stringValue(image, key: "url")
+                            }
+                            
+                            if let image = image["standard_resolution"] as? [String: Any] {
+                                imageObject.standardResolution = AwesomeParser.stringValue(image, key: "url")
+                            }
+                            
                             images.append(imageObject)
                         }
                     }
